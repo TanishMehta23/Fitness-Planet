@@ -1,35 +1,19 @@
 :root {
-  --primary: #ec7474;
-  --secondary: #2C3E50;
-  --light: #f8f9fa;
-  --dark: #1a1a1a;
-  --accent: #FF5722;
-  --text-color: var(--dark);
-  --bg-color: var(--light);
-  --card-bg: white;
-  --team-name-color: var(--secondary);
-  --team-bio-color: #666;
-  --header-gradient: linear-gradient(135deg, rgba(76, 175, 80, 0.9) 0%, rgba(33, 150, 243, 0.6) 100%);
+  --primary: #f1c40f;
+  --secondary: #0a0a0a;
+  --light: #121212;
+  --dark: #0a0a0a;
+  --accent: #ffd700;
+  --text-color: #ffffff;
+  --bg-color: #0a0a0a;
+  --card-bg: #121212;
+  --team-name-color: #ffffff;
+  --team-bio-color: #b0b0b0;
+  --header-gradient: linear-gradient(135deg, rgba(241, 196, 15, 0.85) 0%, rgba(10, 10, 10, 0.95) 100%);
 }
 
 html {
   transition: all 0.5s ease-in;
-}
-
-html.dark {
-  --primary-color: #fff;
-  --secondary-color: #333;
-  --text-color: var(--light);
-  --bg-color: #111;
-  --card-bg: #222;
-  --team-name-color: var(--light);
-  --team-bio-color: #ccc;
-  --header-gradient: linear-gradient(135deg, rgba(76, 175, 80, 0.6) 0%, rgba(33, 150, 243, 0.4) 100%);
-}
-
-html.dark {
-  background-color: #111;
-  color: var(--primary-color);
 }
 
 * {
@@ -50,37 +34,41 @@ body {
 
 
 #cards-container {
-  background-color:black;
-  height: 60vh;
+  background-color: #0a0a0a;
+  min-height: 60vh;
   display: flex;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 40px;
   position: relative;
   z-index: 10;
-  padding: 4px;
+  padding: 40px 20px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(18, 18, 18, 0.85);
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  width: 450px;
-  height: 500px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 320px;
+  max-width: 90vw;
+  height: 440px;
+  position: relative;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   transform-style: preserve-3d;
   perspective: 1000px;
-  /* Add these properties to center children */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .card:hover {
-  transform: translateY(-15px) rotateX(5deg);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 25px 50px rgba(241, 196, 15, 0.3);
+  border-color: rgba(241, 196, 15, 0.5);
 }
 
 .card::before {
@@ -101,10 +89,8 @@ body {
 }
 
 .profile-image {
-  /* Increase dimensions to something more visible */
-  height: 500px;
-  width: 500px;
-  /* Optional: add a border or styling to the container */
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -357,26 +343,7 @@ html.dark .stats {
   transform: translateY(-3px);
 }
 
-/* Dark mode toggle button - add this to your HTML */
-.dark-mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
+/* Dark mode toggle button removed */
 
 .counter {
   font-size: 3rem;
@@ -386,59 +353,91 @@ html.dark .stats {
 }
 
 @media (max-width: 768px) {
-h1 {
-    font-size: 2.5rem;
-}
+  header {
+    padding: 100px 20px 50px;
+  }
 
-h2 {
-    font-size: 2rem;
-}
+  h1 {
+    font-size: 2.3rem;
+  }
 
-.overlay h4 {
-    font-size: 24px; /* Smaller font size on mobile */
-}
+  h2 {
+    font-size: 1.8rem;
+  }
 
-.overlay p {
-    font-size: 14px; /* Smaller font size on mobile */
-}
+  .subtitle {
+    font-size: 1.1rem;
+  }
 
-.mission-text {
+  #cards-container {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 16px;
+    gap: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+    height: 380px;
+    margin: 0 auto;
+  }
+
+  .overlay h4 {
+    font-size: 24px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .mission {
+    padding: 50px 20px;
+  }
+
+  .mission-text {
     font-size: 1rem;
-}
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stat-item h3 {
+    font-size: 2.2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    padding: 50px 20px;
+  }
 }
 
 @media (max-width: 480px) {
-h1 {
-    font-size: 2rem;
-}
+  h1 {
+    font-size: 1.8rem;
+  }
 
-h2 {
+  h2 {
     font-size: 1.5rem;
-}
+  }
 
-.overlay h4 {
+  .overlay h4 {
     font-size: 20px;
-}
-}
-
-@media (max-width: 768px) {
-#cards-container {
-    flex-direction: column;
-    height: auto;
-    padding: 40px 0;
-}
-
-.card {
-    width: 85%;
+  }
+  
+  .card {
     height: 350px;
-    margin: 15px auto;
-}
+  }
 }
 
 /* Global text overflow prevention */
 p, h1, h2, h3, h4, h5, h6, span, a {
-overflow-wrap: break-word;
-word-wrap: break-word;
-word-break: break-word;
-hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }

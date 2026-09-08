@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+
   <!-- Set the browser tab title for the About Us page -->
   <title> Fitness Planet - About Us</title>
-  
+
   <!-- Link to external CSS files for styling different parts of the page -->
-  <link rel="stylesheet" href="about.css"> <!-- Styles specific to the About page -->
-  <link rel="stylesheet" href="navbar.css"> <!-- Styles for the navigation bar -->
-  <link rel="stylesheet" href="footer.css"> <!-- Styles for the footer section -->
-  
+  <link rel="stylesheet" href="css/about.css"> <!-- Styles specific to the About page -->
+  <link rel="stylesheet" href="css/navbar.css"> <!-- Styles for the navigation bar -->
+  <link rel="stylesheet" href="css/footer.css"> <!-- Styles for the footer section -->
+
   <!-- Define the favicon (icon displayed in the browser tab) -->
   <link rel="icon" href="pictures/Fitness.png" type="image/x-icon">
-  
+
   <!-- Preconnect to Google Fonts to optimize font loading (if fonts are used) -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
+
 <body>
   <!-- Placeholder div where the navigation bar will be dynamically inserted -->
-  <div id="nav"></div>
-  
+  <div id="navbar"></div>
+
   <!-- Header section to introduce the page content -->
   <header>
-    <!-- Load JavaScript for dark mode functionality specific to this page -->
-    <script src="dark_about.js"></script>
-    
     <!-- Container for header text content -->
     <div class="header-content">
       <!-- Main heading for the About page -->
       <h1>Our Fitness Journey</h1>
       <!-- Subtitle describing the team's purpose -->
-      <p class="subtitle">We're a team of passionate coders dedicated to help you achieve your health and wellness goals.</p>
+      <p class="subtitle">We're a team of passionate coders dedicated to help you achieve your health and wellness
+        goals.</p>
     </div>
   </header>
 
@@ -45,7 +45,9 @@
       <!-- Heading for the mission section -->
       <h2>Our Mission</h2>
       <!-- Paragraph explaining the mission and vision -->
-      <p class="mission-text">We believe fitness is more than just working out—it’s a lifestyle that empowers you to be your best self. Our mission is to create a supportive community where everyone can discover their strength, build confidence, and transform their lives through expert guidance and innovative training techniques.</p>
+      <p class="mission-text">We believe fitness is more than just working out—it’s a lifestyle that empowers you to be
+        your best self. Our mission is to create a supportive community where everyone can discover their strength,
+        build confidence, and transform their lives through expert guidance and innovative training techniques.</p>
     </div>
   </section>
 
@@ -53,7 +55,7 @@
   <div id="cards-container">
     <div class="card" id="card1">
       <div class="profile-image">
-        <img src="pictures/Chetan.jpg" alt="Chetan Ajmani" >
+        <img src="pictures/Chetan.jpg" alt="Chetan Ajmani">
       </div>
       <div class="overlay">
         <!-- Team member's name -->
@@ -61,16 +63,21 @@
         <!-- Role or title of the team member -->
         <span class="team-role">JavaScript Developer & Interactive Features Expert</span>
         <!-- Description of the team member's contributions -->
-        <p>Bringing functionality to life,I specialize in JavaScript interactivity,engaging and responsive experience.</p><br>
+        <p>Bringing functionality to life,I specialize in JavaScript interactivity,engaging and responsive experience.
+        </p><br>
         <!-- Container for social media links -->
         <div class="social-icons">
           <!-- Google profile link with custom SVG icon -->
           <a href="#" class="google-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-              <path fill="#EA4335" d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
-              <path fill="#4285F4" d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
-              <path fill="#FBBC05" d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
-              <path fill="#34A853" d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
+              <path fill="#EA4335"
+                d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
+              <path fill="#4285F4"
+                d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
+              <path fill="#FBBC05"
+                d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
+              <path fill="#34A853"
+                d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
               <path fill="none" d="M0 0h48v48H0z" />
             </svg>
           </a>
@@ -102,10 +109,14 @@
           <!-- Google profile link with custom SVG icon -->
           <a href="#" class="google-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-              <path fill="#EA4335" d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
-              <path fill="#4285F4" d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
-              <path fill="#FBBC05" d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
-              <path fill="#34A853" d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
+              <path fill="#EA4335"
+                d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
+              <path fill="#4285F4"
+                d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
+              <path fill="#FBBC05"
+                d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
+              <path fill="#34A853"
+                d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
               <path fill="none" d="M0 0h48v48H0z" />
             </svg>
           </a>
@@ -137,10 +148,14 @@
           <!-- Google profile link with custom SVG icon -->
           <a href="#" class="google-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-              <path fill="#EA4335" d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
-              <path fill="#4285F4" d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
-              <path fill="#FBBC05" d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
-              <path fill="#34A853" d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
+              <path fill="#EA4335"
+                d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
+              <path fill="#4285F4"
+                d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
+              <path fill="#FBBC05"
+                d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
+              <path fill="#34A853"
+                d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
               <path fill="none" d="M0 0h48v48H0z" />
             </svg>
           </a>
@@ -152,9 +167,9 @@
           <a href="https://www.linkedin.com/in/vansh-thakur-b6bbbb33a/"><i class='bx bxl-linkedin'></i></a>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
-</div>
+  </div>
 
 
   <!-- Section to display statistics with animated counters -->
@@ -196,33 +211,16 @@
       <!-- Heading for the call-to-action -->
       <h2>Ready to Transform Your Life?</h2>
       <!-- Description motivating users to join -->
-      <p>Join our fitness community today and take the first step toward a healthier, stronger you. Our expert trainers are ready to guide you on your fitness journey.</p>
+      <p>Join our fitness community today and take the first step toward a healthier, stronger you. Our expert trainers
+        are ready to guide you on your fitness journey.</p>
       <!-- Button linking to the sign-in page -->
       <a href="signin.html" class="btn">Join Now</a>
     </div>
   </section>
 
-  <!-- Placeholder div for navigation bar (possibly used for sticky or bottom navigation) -->
-  <div id="navbar"></div>
-  
   <!-- Placeholder div where the footer will be dynamically inserted -->
   <div id="footer"></div>
-  
-  <!-- Chatbox feature for user interaction with an assistant -->
-  <div class="chatbox">
-    <!-- Container for the chat interface -->
-    <div class="chat-container">
-      <!-- Title for the chatbox -->
-      <div class="h1">Talk to your own assistant...</div>
-    </div>
-    <!-- Input area for user queries -->
-    <div class="input-area">
-      <!-- Text input for user to type questions -->
-      <input type="text" class="prompt" placeholder="Ask anything">
-      <!-- Button to submit the query with an SVG icon -->
-      <button type="button" class="arrow"><img src="pictures/btn.svg" alt="Send button"></button>
-    </div>
-  </div>
+
 
   <!-- Script to dynamically load the navigation bar from an external HTML file -->
   <script>
@@ -231,6 +229,12 @@
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar').innerHTML = data;
+        if (typeof initializeChatbot === 'function') {
+          initializeChatbot();
+        }
+        if (typeof highlightActiveNavLink === 'function') {
+          highlightActiveNavLink();
+        }
       });
   </script>
 
@@ -245,14 +249,19 @@
   </script>
 
   <!-- Include GSAP library for creating smooth animations -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Include GSAP ScrollTrigger plugin for scroll-based animations -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Custom JavaScript files for page-specific functionality -->
-  <script src="about.js"></script> <!-- Handles animations and logic for the About page -->
-  <script src="chatbot.js"></script> <!-- Manages the chatbot functionality -->
-  <script src="navbar.js"></script> <!-- Controls navigation bar behavior -->
+  <script src="js/about.js"></script> <!-- Handles animations and logic for the About page -->
+  <script src="js/chatbot.js"></script> <!-- Manages the chatbot functionality -->
+  <script src="js/navbar.js"></script> <!-- Controls navigation bar behavior -->
 </body>
+
 </html>

@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="navbar.css">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
+
 <body>
-    
+
     <div id="nav">
-        <a href="index.html"><img src="pictures/image_transparent.png" alt="logo"></a>
-        <div class="navb">
+        <a href="index.html" class="logo-link"><img src="pictures/image_transparent.png" alt="Fitness Planet Logo"></a>
+        <div class="nav-right-actions">
+            <img class="chatboticon" src="pictures/chatbot.svg" alt="chatbot-png" title="Toggle AI Assistant"
+                style="cursor: pointer;">
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="navb" id="navMenu">
             <h4 class="navbar"><a href="index.html">Home</a></h4>
             <h4 class="navbar"><a href="index.html#bmi-section">BMI</a></h4>
             <h4 class="navbar"><a href="about.html">About Us</a></h4>
             <h4 class="navbar"><a href="cart.html">Store</a></h4>
             <h4 class="navbar"><a href="signin.html">Sign In</a></h4>
-            <img class="navbar chatboticon" src="pictures/chatbot.svg" alt="chatbot-png">
         </div>
     </div>
-    <!-- Add GSAP core -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-<!-- make sure to put gsap link before linking script.js -->    
-<!--gsap cdn is a js library for scrolling animations-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- plugin for gsap-->
 
-<!-- Your JS -->
-<script src="navbar.js"></script>
+    <!-- GSAP core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/navbar.js"></script>
+</body>
 
 </html>

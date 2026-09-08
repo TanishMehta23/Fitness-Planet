@@ -1,0 +1,236 @@
+/* ==========================================================================
+   Footer Section - Dark Obsidian & Fitness Planet Orange Theme
+   ========================================================================== */
+footer {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    box-sizing: border-box;
+    width: 100%;
+    background: #07080a;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding: 70px 0 30px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 10;
+}
+
+.row {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), 
+.col:nth-child(3) {
+    flex-basis: 18%;
+}
+
+.logoo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.col p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 25px;
+    position: relative;
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.emailid {
+    width: fit-content;
+    border-bottom: 1px solid rgba(241, 196, 15, 0.4);
+    margin: 16px 0;
+    color: #f1c40f !important;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    display: inline-block;
+}
+
+ul li a:hover {
+    color: #f1c40f;
+    padding-left: 4px;
+}
+
+hr {
+    width: 88%;
+    max-width: 1200px;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 40px auto 25px;
+}
+
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+.underline {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 25px;
+    height: 100%;
+    background: #f1c40f;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moving 2.5s linear infinite;
+}
+
+/* Social Media Container */
+.card1 {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.socialContainer {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.socialContainer:hover {
+    background: #f1c40f;
+    border-color: #f1c40f;
+    box-shadow: 0 0 16px rgba(241, 196, 15, 0.6);
+    transform: translateY(-3px);
+}
+
+.socialContainer:active {
+    transform: scale(0.92);
+}
+
+.socialSvg {
+    width: 18px;
+    height: 18px;
+}
+
+.socialSvg path {
+    fill: #ffffff;
+}
+
+@keyframes moving {
+    0% {
+        left: -25px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Newsletter Styling */
+.newsletter-box {
+    margin-top: 20px;
+}
+
+.newsletter-box h4 {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 9999px;
+    padding: 4px 4px 4px 14px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: var(--font-body, sans-serif);
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.newsletter-form button {
+    background: #f1c40f;
+    color: #0a0a0a;
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 8px 18px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #ffd700;
+    transform: scale(1.04);
+}
+
+

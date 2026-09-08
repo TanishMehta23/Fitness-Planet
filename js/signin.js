@@ -53,4 +53,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 loginBtn.addEventListener('click', () => {
     container.classList.remove('active');
-})
+});
+
+// Interactive Password Visibility Toggle Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleIcons = document.querySelectorAll('.toggle-password');
+    toggleIcons.forEach(icon => {
+        icon.addEventListener('click', function() {
+            const inputBox = this.closest('.input-box');
+            if (!inputBox) return;
+            const passwordInput = inputBox.querySelector('input[type="password"], input[type="text"]');
+            if (!passwordInput) return;
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                this.classList.remove('bx-show');
+                this.classList.add('bx-hide');
+            } else {
+                passwordInput.type = 'password';
+                this.classList.remove('bx-hide');
+                this.classList.add('bx-show');
+            }
+        });
+    });
+});

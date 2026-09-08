@@ -4,136 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fitness Planet - Sign In </title>
+    <title>Fitness Planet | Authentication</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="signin.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="shortcut icon" href="pictures/Fitness.png" type="image/x-icon" sizes="160*160">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="icon" href="pictures/Fitness.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <div id="nav"></div>
-        <div class="container">
+    <video autoplay loop muted src="pictures/bg_video.mp4"></video>
+
+    <!-- Header Navigation Container -->
+    <div id="navbar"></div>
+
+    <main class="page-wrapper">
+        <div class="container glass-card">
             <div class="form-box login">
-                <form action="">
-                    <h1 class="login">Login</h1>
+                <form action="#">
+                    <h1 class="login">Welcome Back</h1>
+                    <p class="auth-sub">Sign in to track workouts and access your account.</p>
+
                     <div class="input-box">
                         <input type="text" placeholder="Username" required>
                         <i class='bx bxs-user'></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" placeholder="Password" required>
-                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" class="password-input" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt icon-lock'></i>
+                        <i class='bx bx-show toggle-password' title="Toggle Password Visibility"></i>
                     </div>
                     <div class="forgot-link">
-                        <a href="#">Forgot Password ?</a>
+                        <a href="#">Forgot Password?</a>
                     </div>
-                    <button type="submit" class="btn">Login</button><br><br>
-                    <p class="social">or, Login with Social Platforms</p><br>
-                    <div class="social-icons">
-                        <a href="#" class="google-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-                                <path fill="#EA4335"
-                                    d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
-                                <path fill="#4285F4"
-                                    d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
-                                <path fill="#FBBC05"
-                                    d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
-                                <path fill="#34A853"
-                                    d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
-                                <path fill="none" d="M0 0h48v48H0z" />
-                            </svg>
-                        </a>
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    </div>
+                    <button type="submit" class="btn btn-primary auth-submit">Login</button>
                 </form>
             </div>
 
             <div class="form-box register">
-                <form action="" id="email-form">
-                    <h1 class="login">Registration</h1>
+                <form action="#" id="email-form">
+                    <h1 class="login">Create Account</h1>
+                    <p class="auth-sub">Join Fitness Planet to start your transformation.</p>
+
                     <div class="input-box">
                         <input type="text" placeholder="Username" required>
                         <i class='bx bxs-user'></i>
                     </div>
                     <div class="input-box">
-                        <label for="user_email"></label>
-                        <input type="email" id="user_email" name="user_email" placeholder="Email" required>
+                        <input type="email" id="user_email" name="user_email" placeholder="Email Address" required>
                         <i class='bx bxs-envelope'></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" placeholder="Password" required>
-                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" class="password-input" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt icon-lock'></i>
+                        <i class='bx bx-show toggle-password' title="Toggle Password Visibility"></i>
                     </div>
-                    <button type="submit" class="btn">Register</button><br><br>
-                    <p class="social">or, register with social platforms</p><br>
-                    <div class="social-icons">
-                        <a href="#" class="google-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-                                <path fill="#EA4335"
-                                    d="M24 9.5c3.31 0 6.29 1.14 8.63 3.03l6.43-6.43C34.92 2.36 29.72 0 24 0 14.68 0 6.73 5.67 2.71 13.86l7.49 5.82C12.13 13.05 17.66 9.5 24 9.5z" />
-                                <path fill="#4285F4"
-                                    d="M46.2 24.5c0-1.43-.13-2.81-.38-4.13H24v8.05h12.52c-.54 2.83-2.16 5.22-4.63 6.84l7.2 5.6C43.7 36.17 46.2 30.77 46.2 24.5z" />
-                                <path fill="#FBBC05"
-                                    d="M10.2 28.64c-1.23-2.04-1.93-4.42-1.93-6.95s.7-4.91 1.93-6.95l-7.49-5.82C.98 13.91 0 18.76 0 23.99s.98 10.08 2.71 14.07l7.49-5.82z" />
-                                <path fill="#34A853"
-                                    d="M24 48c6.48 0 11.91-2.15 15.88-5.83l-7.2-5.6c-2.03 1.36-4.63 2.15-8.68 2.15-6.34 0-11.87-3.55-14.81-8.86l-7.49 5.82C6.73 42.33 14.68 48 24 48z" />
-                                <path fill="none" d="M0 0h48v48H0z" />
-                            </svg>
-                        </a>
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    </div>
+                    <button type="submit" class="btn btn-primary auth-submit">Register</button>
                 </form>
             </div>
 
             <div class="toggle-box">
                 <div class="toggle-panel toggle-left">
                     <h1>Hello Welcome!</h1>
-                    <p>Don't have an account</p>
-                    <button class="btn register-btn">Register Here</button>
+                    <p>Don't have an account yet?</p>
+                    <button class="btn btn-outline register-btn">Register Here</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Welcome Back!</h1><br><br>
-                    <p>Already have an account</p>
-                    <button class="btn login-btn">Login Here</button>
+                    <h1>Welcome Back!</h1>
+                    <p>Already have an account?</p>
+                    <button class="btn btn-outline login-btn">Login Here</button>
                 </div>
             </div>
         </div>
+    </main>
 
-        <div id="navbar"></div> <!-- Placeholder for navbar -->
-
-        <div class="chatbox">
-            <div class="chat-container">
-                <div class="h1">Talk to your own assistant...</div>
-            </div>
-            <div class="input-area">
-                <input type="text" class="prompt" placeholder="Ask anything">
-                <button type="button" class="arrow"><img src="pictures/btn.svg" alt="img"></button>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- make sure to put gsap link before linking script.js -->
-    <!--gsap cdn is a js library for scrolling animations-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- plugin for gsap-->
-
-
-    <script src="signin.js"></script>
-    <script src="chatbot.js"></script>
-    <script src="navbar.js"></script>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+                if (typeof initializeChatbot === 'function') {
+                    initializeChatbot();
+                }
+                if (typeof highlightActiveNavLink === 'function') {
+                    highlightActiveNavLink();
+                }
+            });
+    </script>
+    <script src="js/navbar.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/signin.js"></script>
 </body>
 
 </html>
